@@ -1,0 +1,25 @@
+[package]
+name = "replicate"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.71"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4.3", features = ["derive"] }
+tokio = { version = "1.30", features = ["full"] }
+tokio-util = { version = "0.7", features = ["codec"] }
+futures = "0.3"
+bytes = "1.4"
+rand = "0.8.5"
+
+sha3 = "0.10"
+dusk-bls12_381-sign = "0.4"
+dusk-bytes = { version = "0.1" }
+
+serde = { version = "1.0", features = ["derive"] }
+serde_with = { version = "3.1", features = ["macros"] }
+rmp-serde = "1.1"
+bs58 = "0.5"
+dashmap = "5.5"
+nanoid = "0.4"
